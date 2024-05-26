@@ -10,25 +10,71 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" defer src="index.js"></script>
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <ul>
-      <li><a href="">00 Home</a></li>
-      <li><a href="">01 Destination</a></li>
-      <li><a href="">02 Crew</a></li>
-      <li><a href="">03 Technology</a></li>
-    </ul>
+    <header>
+      <nav>
+        <div>
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div>
+          <img
+            src="./assets/shared/icon-hamburger.svg"
+            alt=""
+            class="cursor-pointer open"
+          />
+        </div>
 
-    <p>So, you want to travel to</p>
-    <span>Space</span>
-    <p>
+        <ul class="hide navigation-elements">
+          <div>
+            <img
+              src="./assets/shared/icon-close.svg"
+              alt=""
+              class="cursor-pointer close"
+            />
+          </div>
+          <li>
+            <a href="" class="text-white playfair-display-regular">
+              <span aria-hidden="true" class="playfair-display-bold">00</span>
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white playfair-display-regular">
+              <span aria-hidden="true" class="playfair-display-bold">01</span>
+              Destination</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white playfair-display-regular">
+              <span aria-hidden="true" class="playfair-display-bold">02</span>
+              Crew</a
+            >
+          </li>
+          <li>
+            <a href="" class="text-white playfair-display-regular">
+              <span aria-hidden="true" class="playfair-display-bold">03</span>
+              Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <p class="playfair-display-regular text-white">So, you want to travel to</p>
+    <span class="playfair-display-bold text-white">SPACE</span>
+    <p class="source-sans-3-regular text-white">
       Let’s face it; if you want to go to space, you might as well genuinely go
       to outer space and not hover kind of on the edge of it. Well sit back, and
       relax because we’ll give you a truly out of this world experience!
     </p>
 
-    <button>Explore</button>
+    <button class="explore source-sans-3-regular cursor-pointer">
+      Explore
+    </button>
   </body>
 </html>
