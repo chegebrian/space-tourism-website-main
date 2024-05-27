@@ -1,0 +1,81 @@
+
+*{
+    line-height: 1.5rem;
+}
+
+body {
+  background-image: url(../assets/destination/background-destination-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --text-white: #ffffff;
+  --light-blue : #e5f9ff;
+}
+
+h1,
+h2,
+p,
+li,
+a {
+  color: var(--light-blue);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1 > span {
+  color: #808080;
+  margin-inline-end: 0.75rem;
+}
+
+main img {
+width: 10rem;
+object-fit: scale-down;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.destination {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.destination li:not(:last-child) {
+    margin-inline-end: 1.5rem;
+    
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.content {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--text-white);
+}
+
+.destination-infor {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.destination-infor li {
+    text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}

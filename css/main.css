@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* source sans font */
+.source-sans-3-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.source-sans-3-bold {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* playfair-display font */
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-display-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.wrapper {
+  padding: 2rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  position: fixed;
+  /* width: 70%; */
+  inset: 0 0 0 30%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2.7rem 2rem;
+  z-index: 1;
+  background-color: hsl(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(2.5rem);
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+header nav ul div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+header nav ul img {
+  width: 2rem;
+  height: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav ul li a > span {
+  margin-inline-end: 0.75rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+@keyframes show {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes hide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.text-white {
+  color: #dbe9fa;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
