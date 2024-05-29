@@ -37,7 +37,7 @@ async function renderMarkup() {
         })}
         </ul>
 
-        <h2>Moon</h2>
+        <h2>${destinations.name}</h2>
 
         <p class="content text-center">
           ${destinations.description}
