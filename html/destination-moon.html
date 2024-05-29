@@ -12,7 +12,8 @@
     />
     <link rel="stylesheet" href="../css/destination.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <script type="module" defer src="../index.js"></script>
+    <script defer src="../index.js"></script>
+    <script defer src="../js/moon.js"></script>
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
@@ -39,14 +40,17 @@
               />
             </div>
             <li>
-              <a href="../index.html" class="text-white playfair-display-regular">
+              <a
+                href="../index.html"
+                class="text-white playfair-display-regular"
+              >
                 <span aria-hidden="true" class="playfair-display-bold">00</span>
                 Home</a
               >
             </li>
             <li>
               <a
-                href="./destination-moon.html"
+                href="./destination-Moon.html"
                 class="text-white playfair-display-regular"
               >
                 <span aria-hidden="true" class="playfair-display-bold">01</span>
@@ -68,38 +72,7 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <h1><span aria-hidden="true">01</span>Pick your destination</h1>
-
-        <img
-          src="../assets/destination/image-moon.webp"
-          alt="image-moon"
-          srcset=""
-          onerror="this.src='../assets/destination/image-moon.png'"
-        />
-
-        <ul class="destination">
-          <li><a href="">Moon</a></li>
-          <li><a href="">Mars</a></li>
-          <li><a href="">Europa</a></li>
-          <li><a href="">Titan</a></li>
-        </ul>
-
-        <h2>Moon</h2>
-
-        <p class="content text-center">
-          See our planet as you’ve never seen it before. A perfect relaxing trip
-          away to help regain perspective and come back refreshed. While you’re
-          there, take in some history by visiting the Luna 2 and Apollo 11
-          landing sites.
-        </p>
-        <ul class="destination-infor">
-          <li>Avg. distance</li>
-          <li>384,400 km</li>
-          <li>Est. travel time</li>
-          <li>3 days</li>
-        </ul>
-      </main>
+      <main class="main"></main>
     </div>
   </body>
 </html>

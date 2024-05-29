@@ -1,5 +1,3 @@
-import destination from "./js/destination.js";
-
 const openEl = document.querySelector(".open");
 const closeEl = document.querySelector(".close");
 const navigationEl = document.querySelector(".navigation-elements");
