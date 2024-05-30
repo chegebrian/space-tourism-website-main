@@ -6,24 +6,31 @@ async function destination() {
   return data;
 }
 
+let index = 0;
+
+async function changeTab(newIndex) {
+  index = newIndex;
+  renderMarkup(index);
+}
+
 async function renderMarkup() {
   const data = await destination();
-  let { destinations } = data;
+ 
+  let destinations = data.destinations[index];
 
   destinations = {
-    description: destinations[3].description,
-    distance: destinations[3].distance,
-    name: destinations[3].name,
-    travel: destinations[3].travel,
-    images: destinations[3].images,
+    description: destinations.description,
+    distance: destinations.distance,
+    name: destinations.name,
+    travel: destinations.travel,
+    images: destinations.images,
   };
   console.log(destinations);
 
   // render destination
 
   const markup = `
-<h1><span aria-hidden="true">01</span>Pick your destination</h1>
-
+  <h1><span aria-hidden="true">01</span>Pick your destination</h1>
         <img
           src="${destinations.images.webp}"
           alt="image-moon"
@@ -32,8 +39,8 @@ async function renderMarkup() {
         />
 
         <ul class="destination">
-        ${data.destinations.map((destination) => {
-          return `<li><a href="../html/destination-${destination.name}.html">${destination.name}</a></li>`;
+        ${data.destinations.map((destination, index) => {
+          return `<li><button onClick="changeTab(${index})">${destination.name}</button></li>`;
         })}
         </ul>
 
@@ -49,7 +56,7 @@ async function renderMarkup() {
           <li>${destinations.travel}</li>
         </ul>
 `;
-
+  mainEl.innerHTML = "";
   mainEl.insertAdjacentHTML("beforeend", markup);
 }
 

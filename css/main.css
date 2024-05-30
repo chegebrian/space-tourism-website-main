@@ -52,7 +52,7 @@ header nav ul {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 2.7rem 2rem;
+  padding: 2.5rem 2rem;
   z-index: 1;
   background-color: hsl(0, 0%, 100%, 0.1);
   backdrop-filter: blur(2.5rem);
