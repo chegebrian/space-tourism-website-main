@@ -55,6 +55,7 @@ ul {
 ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 h2 {

@@ -75,6 +75,7 @@ header nav ul img {
 header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 header nav ul li a > span {

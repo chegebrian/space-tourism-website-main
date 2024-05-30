@@ -40,7 +40,7 @@ async function renderMarkup() {
 
         <ul class="destination">
         ${data.destinations.map((destination, index) => {
-          return `<li><button onClick="changeTab(${index})">${destination.name}</button></li>`;
+          return `<li><a onClick="changeTab(${index})">${destination.name}</a></li>`;
         })}
         </ul>
 

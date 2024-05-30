@@ -1,0 +1,75 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* source sans font */
+.source-sans-3-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.source-sans-3-bold {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* playfair-display font */
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.playfair-display-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  line-height: 1.5rem;
+}
+
+:root {
+  --text-white: #ffffff;
+  --light-blue: #e5f9ff;
+}
+
+body {
+  background-image: url(../assets/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light-blue);
+}
+h1 > span {
+  color: #808080;
+  margin-inline-end: 0.75rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+main > span {
+  color: #808080;
+  font-size: 1.5rem;
+}
+
+main > p {
+  color: #e5f9ffd3;
+}
+
+main > div{
+    display: flex;
+    gap: 1.5rem;
+}
+main img {
+  width: 12rem;
+}
+
+.text-center {
+  text-align: center;
+}
