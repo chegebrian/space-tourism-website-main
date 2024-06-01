@@ -8,6 +8,11 @@ async function getCrew() {
 
 let index = 0;
 
+function changeCrew(newIndex) {
+  index = newIndex;
+  displayCrew(newIndex);
+}
+
 async function displayCrew() {
   const data = await getCrew();
   console.log(data);
@@ -30,9 +35,11 @@ async function displayCrew() {
             ${crew.infor}
         </p>
         <div>
-        ${data.crew.map(role => {
-            return `<input type="radio" name="crew" id="${role}" />`
-        }).join(" ")}
+        ${data.crew
+          .map((role, index) => {
+            return `<input type="radio" name="crew" id="${role}" onClick="changeCrew(${index})"/>`;
+          })
+          .join(" ")}
         </div>
         <img
           class="crew-image"
@@ -41,7 +48,7 @@ async function displayCrew() {
           onerror="src ='${crew.image.png}'"
         />
   `;
-
+  mainEl.innerHTML = "";
   mainEl.insertAdjacentHTML("beforeend", markup);
 }
 

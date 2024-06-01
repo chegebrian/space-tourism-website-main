@@ -1,0 +1,63 @@
+* {
+  line-height: 1.5rem;
+}
+
+body {
+  background-image: url(../assets/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --text-white: #ffffff;
+  --light-blue: #e5f9ff;
+  --dark-light-blue: #e5f9ff3f;
+}
+
+h1,
+span,
+h2,
+p {
+  color: var(--light-blue);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h1 > span {
+  color: #808080;
+  margin-inline-end: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+main > img {
+  max-width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+main > div {
+  display: flex;
+  gap: 2rem;
+}
+
+main > div > button {
+  font-size: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 1px solid var(--dark-light-blue);
+  color: var(--light-blue);
+  outline: none;
+
+  background-color: transparent;
+  transition: border 700ms linear;
+}
+
+main > div > button:hover {
+  border: 1px solid var(--light-blue);
+}
