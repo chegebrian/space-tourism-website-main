@@ -15,7 +15,7 @@ async function changeTab(newIndex) {
 
 async function renderMarkup() {
   const data = await destination();
- 
+
   let destinations = data.destinations[index];
 
   destinations = {
@@ -30,7 +30,7 @@ async function renderMarkup() {
   // render destination
 
   const markup = `
-  <h1><span aria-hidden="true">01</span>Pick your destination</h1>
+  <h1 class="roboto-bold text-start"><span aria-hidden="true">01</span>Pick your destination</h1>
         <img
           src="${destinations.images.webp}"
           alt="image-moon"
@@ -40,20 +40,25 @@ async function renderMarkup() {
 
         <ul class="destination">
         ${data.destinations.map((destination, index) => {
-          return `<li><a onClick="changeTab(${index})">${destination.name}</a></li>`;
+          return `<li><a onClick="changeTab(${index})" class="lato-bold color">${destination.name}</a></li>`;
         })}
         </ul>
 
-        <h2>${destinations.name}</h2>
+        <h2 class="roboto-bold">${destinations.name}</h2>
 
-        <p class="content text-center">
+        <p class="content text-center lato-regular color">
           ${destinations.description}
         </p>
-        <ul class="destination-infor">
-          <li>Avg. distance</li>
-          <li>${destinations.distance}</li>
-          <li>Est. travel time</li>
-          <li>${destinations.travel}</li>
+        <ul class="destination-infor flex">
+        <div>
+        
+        <li class="text-center roboto-regular color font-size-sm margin-bt">Avg. distance</li>
+        <li class="text-center roboto-regular font-size-lg">${destinations.distance}</li>
+        </div>
+          <div>
+          <li class="text-center roboto-regular color font-size-sm margin-bt">Est. travel time</li>
+          <li class="text-center roboto-regular font-size-lg">${destinations.travel}</li>
+          </div>
         </ul>
 `;
   mainEl.innerHTML = "";

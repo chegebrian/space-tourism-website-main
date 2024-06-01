@@ -1,6 +1,5 @@
-
-*{
-    line-height: 1.5rem;
+* {
+  line-height: 1.5rem;
 }
 
 body {
@@ -11,7 +10,7 @@ body {
 
 :root {
   --text-white: #ffffff;
-  --light-blue : #e5f9ff;
+  --light-blue: #e5f9ff;
 }
 
 h1,
@@ -32,12 +31,12 @@ h1 > span {
 }
 
 main img {
-width: 10rem;
-object-fit: scale-down;
+  width: 10rem;
+  object-fit: scale-down;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .destination {
@@ -48,8 +47,7 @@ ul {
 }
 
 .destination li:not(:last-child) {
-    margin-inline-end: 1.5rem;
-    
+  margin-inline-end: 1.5rem;
 }
 
 ul li a {
@@ -59,24 +57,65 @@ ul li a {
 }
 
 h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .content {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--text-white);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--text-white);
 }
 
 .destination-infor {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .destination-infor li {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .text-center {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .margin-bt {
+    margin-bottom: 1rem;
+  }
+
+  main p {
+    width: 40rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .destination {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+    margin: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  main img {
+    width: 20rem;
+  }
 }

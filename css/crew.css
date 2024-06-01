@@ -1,33 +1,3 @@
-/* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-
-/* source sans font */
-.source-sans-3-regular {
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.source-sans-3-bold {
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* playfair-display font */
-.playfair-display-regular {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.playfair-display-bold {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
 
 * {
   line-height: 1.5rem;
@@ -72,4 +42,11 @@ main img {
 
 .text-center {
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+  }
+
 }

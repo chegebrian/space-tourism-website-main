@@ -10,9 +10,10 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="index.css" />
     <script defer src="index.js"></script>
+    <script defer src="./js/media.js"></script>
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -27,39 +28,42 @@
             <img
               src="./assets/shared/icon-hamburger.svg"
               alt=""
-              class="cursor-pointer open"
+              class="cursor-pointer open open-menu"
             />
           </div>
 
-          <ul class="hide navigation-elements">
+          <ul class="navigation-elements hide">
             <div>
               <img
                 src="./assets/shared/icon-close.svg"
                 alt=""
-                class="cursor-pointer close"
+                class="cursor-pointer close close-menu"
               />
             </div>
             <li>
-              <a href="./index.html" class="text-white playfair-display-regular">
-                <span aria-hidden="true" class="playfair-display-bold">00</span>
+              <a href="./index.html" class="text-white">
+                <span aria-hidden="true">00</span>
                 Home</a
               >
             </li>
             <li>
-              <a href="./html/destination.html" class="text-white playfair-display-regular">
-                <span aria-hidden="true" class="playfair-display-bold">01</span>
+              <a href="./html/destination.html" class="text-white">
+                <span aria-hidden="true">01</span>
                 Destination</a
               >
             </li>
             <li>
-              <a href="./html/crew.html" class="text-white playfair-display-regular">
-                <span aria-hidden="true" class="playfair-display-bold">02</span>
+              <a href="./html/crew.html" class="text-white">
+                <span aria-hidden="true">02</span>
                 Crew</a
               >
             </li>
             <li>
-              <a href="./html/technology.html" class="text-white playfair-display-regular">
-                <span aria-hidden="true" class="playfair-display-bold">03</span>
+              <a
+                href="./html/technology.html"
+                class="text-white playfair-display-regular"
+              >
+                <span aria-hidden="true">03</span>
                 Technology</a
               >
             </li>
@@ -67,19 +71,22 @@
         </nav>
       </header>
       <main>
-        <p class="playfair-display-regular text-white">
-          So, you want to travel to
-        </p>
-        <span class="playfair-display-bold text-white">SPACE</span>
-        <p class="source-sans-3-regular text-white">
+        <p class="roboto-regular text-white">So, you want to travel to</p>
+        <span class="roboto-bold text-white">SPACE</span>
+        <p class="roboto-light text-white text-center">
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-        <button class="explore source-sans-3-regular cursor-pointer">
-          Explore
-        </button>
+        <!-- <button class="explore lato-regular cursor-pointer">
+        </button> -->
+        <a
+          href="./html/destination.html"
+          class="explore lato-regular cursor-pointer"
+        >
+          explore
+        </a>
       </main>
     </div>
   </body>
