@@ -11,6 +11,7 @@ async function getTechData() {
 function changeTechData(newIndex) {
   index = newIndex;
   displayTechData(index);
+  
 }
 
 async function displayTechData() {
